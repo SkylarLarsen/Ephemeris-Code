@@ -21,8 +21,8 @@ print("Calculated RA:", Decimal_Calc_RA)
 print("Calculated Dec:", Decimal_Calc_Dec)
 
 #Calculate Difference between observed vs. Calculated RA and Dec
-OC_RA = abs((Obs_RA - Decimal_Calc_RA) * math.cos(Decimal_Calc_Dec*(math.pi/180)))
-OC_Dec = abs(Obs_Dec - Decimal_Calc_Dec)
+OC_RA = (Obs_RA - Decimal_Calc_RA) * math.cos(Decimal_Calc_Dec*(math.pi/180))
+OC_Dec = Obs_Dec - Decimal_Calc_Dec
 
 print("Calculated RA Ephemeris:", OC_RA)                 #In Decimal Degrees
 print("Calculated Dec Ephemeris:", OC_Dec)               #In Decimal Degrees
