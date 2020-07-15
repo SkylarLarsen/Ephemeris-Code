@@ -109,5 +109,5 @@ for offset in [-1, 0, 1]:
 ax.plot(phase_model, mag_model, '-k', lw=2)
 ax.set(xlim=(0, 1),
        xlabel='phase',
-       ylabel='mag')
+       ylabel='difference')
 ax.invert_yaxis()
