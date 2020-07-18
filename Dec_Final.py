@@ -105,7 +105,7 @@ best_frequency = frequency[np.argmax(power)]
 mag_model = ls.model(phase_model / best_frequency, best_frequency)
 
 for offset in [-1, 0, 1]:
-    ax.errorbar(phase + offset, y, fmt='.',
+    ax.errorbar(phase + offset, data, fmt='.',
                 color='gray', ecolor='lightgray', capsize=0);
 ax.plot(phase_model, mag_model, '-k', lw=2)
 ax.set(xlim=(0, 1),
